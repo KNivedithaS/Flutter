@@ -8,19 +8,19 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
-  @override
+  @override //important function in dart
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Layout Demo',
 
       home:Scaffold(
         appBar:AppBar(
-          title: Text('Demonstratiom of Layouts'),
+          title: Text('Demonstration of Layouts'),
         ),
         body:Center(child:Container(
           height: 500,
           width: 500,
-          color:Colors.black,
+          color:Colors.white,
           child: GridView.count(crossAxisCount: 2,
             mainAxisSpacing: 7, crossAxisSpacing: 7,
             children:[
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
                   )
               ),
               Container(
-                  color:Colors.yellow,
+                  color:Colors.brown,
                   child:Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
                   )
               ),
               Container(
-                  color: Colors.blue,
+                  color: Colors.blueAccent,
                   child:Stack(
                     children: [
                       Positioned(
@@ -76,7 +76,7 @@ class MyApp extends StatelessWidget {
                   )
               ),
               Container(
-                  color:Colors.green,
+                  color:Colors.lightGreen,
                   child:Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
